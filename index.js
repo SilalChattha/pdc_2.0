@@ -59,4 +59,6 @@ app.use(common);
 app.use(staff);
 app.use(manager);
 
-app.listen(3000);
+
+const PORT = 3306;
+app.listen(process.env.PORT || PORT);
